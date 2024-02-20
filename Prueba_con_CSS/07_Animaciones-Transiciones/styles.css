@@ -1,0 +1,96 @@
+#boton{
+    display: block;
+    padding: 20px 20px 20px 20px;
+    background-color: #008000;
+    color: white;
+    width: 150px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border: 3px solid #003f00;
+    transition: border 500ms, background-color 3s, border-radius 1s;
+}
+
+#boton:hover{
+    border-radius: 15px;
+    background-color: orangered;
+    border: 5px solid red;
+}
+
+#boton:link{
+    background-color: blue;
+    border: 5px solid skyblue;
+}
+
+#Caja{
+    width: 250px;
+    height: 250px;
+    background-color: #20b2aa;
+    border: 5px solid black;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 200px;
+    animation-name: desplazamiento;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#Caja2{
+    width: 250px;
+    height: 250px;
+    background-color: #008000;
+    border: 5px solid black;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 200px;
+    animation-name: desplazamiento2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes desplazamiento{
+    0%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+        border-radius: 999px;
+    }
+    25%{
+        background-color: green;
+        border-radius: 999px;
+    }
+    50%{
+        margin-left: 1043px;
+        transform: rotate(360deg);
+        border-radius: 999px;
+    }
+    75%{
+        background-color: red;
+        border-radius: 999px;
+    }
+    77%{
+        border: 5px dashed #87ceeb;
+    }
+    100%{
+        margin-left: 0px;
+        border-radius: 999px;
+    }
+}
+
+
+@keyframes desplazamiento2{
+    0%{
+        margin-left: 0px;
+    }
+    50%{
+        margin-left: 1043px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
