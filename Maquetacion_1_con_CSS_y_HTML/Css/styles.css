@@ -255,11 +255,16 @@ button:hover{
     font-family: sans-serif, Arial, Helvetica;
 }
 
+#aside{
+    margin-right: 30px;
+}
+
 #frase{
     width: 180px;
     padding: 10px;
     font-size: 14px;
     font-family: sans-serif;
+    margin: -5px 0px 0px 0px;
 }
 
 #aside .widget{
@@ -393,6 +398,20 @@ button:hover{
 .icon{
     font-family: "icons";
     margin-right: 5px;
-    margin-top: -1px;
+    margin-top: -2px;
     float: left;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#footer{
+
+}
+
+#hitory{
+    float: right;
+    margin-top: 20px;
 }
