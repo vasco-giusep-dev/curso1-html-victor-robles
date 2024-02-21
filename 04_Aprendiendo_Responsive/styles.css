@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    width: 70%;
+    background-color: red;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    background-color: lightblue;
+    color: #333333;
+    line-height: 150px;
+    text-align: center;
+}
+
+aside{
+    width: 25%;
+    float: left;
+    min-height: 700px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 700px;
+}
+
+#article{
+    background-color: lemonchiffon;
+    width: 75%;
+    min-height: 700px;
+    float: left;
+}
+
+#article article{
+    width: 25%;
+    height: 150px;
+    background-color: green;
+    color: white;
+    line-height: 150px;
+    text-align: center;
+    border: 2px solid white;
+    float: left;
+    margin: 15px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+/* Responsive */
+
+/* Desde la anchura 0px hasta la anchura 888px de pantalla */
+@media (max-width: 888px){
+    /* Se ejecutaran estos estilos */
+    #article article{
+        width: 40%;
+        background-color: red;
+    }
+}
+
+
+@media(max-width: 632px){
+
+    #container{
+        overflow: hidden;
+    }
+
+        aside{
+            float: none;
+            min-height: auto;
+            line-height: 20px;
+            width: 91%;
+            padding: 19px;
+        }
+
+        #article{
+            width: 100%;
+        }
+
+        /* Se ejecutaran estos estilos */
+        #article article{
+            width: 90%;
+            background-color: blue;
+        }
+}
+
+@media(max-width: 554px){
+        /* Se ejecutaran estos estilos */
+        body{
+            background-color: lightsalmon;
+        }
+}
+
+@media(max-width: 590px){
+        /* Se ejecutaran estos estilos */
+        body{
+            background-color: lightsalmon;
+        }
+}
