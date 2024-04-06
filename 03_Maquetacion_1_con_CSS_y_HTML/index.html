@@ -1,397 +1,328 @@
+
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Maquetacion</title>
-        <link rel="icon" type="image/x-icon" href="img/logo.png">
 
-        <link rel="stylesheet" type="text/css" href="Css/styles.css">
+<head>
+    <meta charset="utf-8" />
+    <title>Máster en CSS con Víctor Robles WEB</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+    <link rel="stylesheet" type="text/css" href="Css/styles.css" />
+</head>
 
+<body>
 
-    </head>
-    <body>
+    <!-- Inicio de la cabecera -->
+    <header id="header">
+        <div id="logotipo">
+            <img src="img/logo.png" alt="Logotipo de la web" />
+        </div>
 
-        <!-- Inicio De La Cabecera -->
+        <h1>
+            <a href="index.html">
+                MASTER EN CSS
+            </a>
+        </h1>
+    </header>
+    <!-- Fin de la cabecera -->
 
-        <header id="header">
-            <div id="logotipo">
-                <img src="img/logo.png" alt="Logotipo de la WEB">
+    <!-- Menú de navegación -->
+    <nav id="nav">
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="index.html">Contenido</a>
+            </li>
+            <li>
+                <a href="index.html">Requerimientos</a>
+            </li>
+            <li>
+                <a href="index.html">Lenguajes</a>
+                <ul>
+                    <li>
+                        <a href="index.html">HTML</a>
+                    </li>
+                    <li>
+                        <a href="index.html">CSS</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="index.html">Frameworks</a>
+                <ul>
+                    <li>
+                        <a href="index.html">LESS</a>
+                    </li>
+                    <li>
+                        <a href="index.html">SASS</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Bootstrap 4</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="index.html">Proyectos</a>
+            </li>
+            <li>
+                <a href="index.html">El instructor</a>
+            </li>
+            <li>
+                <a href="index.html">Reseñas</a>
+            </li>
+            <li>
+                <a href="index.html">Blog</a>
+            </li>
+            <li>
+                <a href="index.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Fin del menú de navegación -->
+
+    <!-- Inicio del contenido central -->
+    <div id="content">
+
+        <!-- Inicio de la barra lateral -->
+        <aside id="aside">
+            <div class="widget" id="login">
+                <h3>Entrar a la web</h3>
+                <form>
+                    <label>Usuario:</label>
+                    <input type="text" />
+
+                    <label>Contraseña:</label>
+                    <input type="password" />
+
+                    <input type="submit" value="Entrar" />
+                </form>
+                <a href="#">Zona de alumnos</a>
+                <a href="#">Zona del profesor</a>
+                <a href="#">Acceso a calificaciones</a>
             </div>
 
-            <h1>
-                <a href="index.html">
-                    MASTER EN CSS
-                </a>
-            </h1>
+            <div class="widget" id="login">
+                <h3 class="blue">Aula virtual 1</h3>
+                <form>
+                    <label>Nombre de usuario:</label>
+                    <input type="text" />
 
-        </header>
+                    <label>Contraseña:</label>
+                    <input type="password" />
 
-        <!-- Fin De La Cabecera -->
-        <!-- Inicio Del Menú De Navegacion -->
+                    <input type="submit" value="Entrar" />
+                </form>
+            </div>
 
-        <nav id="nav">
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="index.html">Contenido</a>
-                </li>
-                <li>
-                    <a href="index.html">Requerimientos</a>
-                </li>
-                <li>
-                    <a href="index.html">Lenguajes</a>
-                    <ul>
-                        <li><a href="index.html">HTML</a></li>
-                        <li><a href="index.html">CSSH</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="index.html">Frameworks</a>
-                    <ul>
-                        <li><a href="index.html">LESS</a></li>
-                        <li><a href="index.html">SASS</a></li>
-                        <li><a href="index.html">Bootstrap</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="index.html">Proyectos</a>
-                </li>
-                <li>
-                    <a href="index.html">El instructor</a>
-                </li>
-                <li>
-                    <a href="index.html">Reseñas</a>
-                </li>
-                <li>
-                    <a href="index.html">Blog</a>
-                </li>
-                <li>
-                    <a href="index.html">Contactos</a>
-                </li>
-            </ul>
-        </nav>
+            <div class="widget" id="login">
+                <h3 class="red">Aula virtual 2</h3>
+                <form>
+                    <label>Nombre de usuario:</label>
+                    <input type="text" />
 
-        <!-- Fin Del Menú De Navegacion -->
-        <!-- Inicio Del Contenido Central -->
+                    <label>Contraseña:</label>
+                    <input type="password" />
 
-        <div id="content">
-            <!-- Inicio De La Barra Lateral  -->
+                    <input type="submit" value="Entrar" />
+                </form>
+            </div>
 
-            <aside id="aside">
+            <div class="widget" id="login">
+                <h3>Enlaces de interes</h3>
+                <ul>
+                    <li>
+                        <a href="https://victorroblesweb.es/academy">
+                            Máster en JavaScript
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://victorroblesweb.es/academy">
+                            Máster en PHP
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://victorroblesweb.es/academy">
+                            Máster en webs full-stack
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://victorroblesweb.es/academy">
+                            Máster en Frameworks JS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://victorroblesweb.es/academy">
+                            Curso de Git y comandos Linux
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://victorroblesweb.es/academy">
+                            victorroblesweb.es
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- Fin de la barra lateral -->
 
-                <div class="widget" id="log_in">
-                    <h3>Entrar a la WEB</h3>
-                    <form id="form">
-                        <label for="Usuario">Usuario:</label>
-                        <input name="Usuario" type="text">
-                        <label for="Contraseña">Contraseña:</label>
-                        <input name="Contraseña" type="password">
-                        <input id="enviar" type="submit" value="Entrar">
-                        <br>
+        <!--Inicio de las secciones-->
+        <div id="sections">
 
-                        <a href="#">Zona de alumnos</a>
-                        <a href="#">Zona de Profesores</a>
-                        <a href="#">Acceso a las calificaciones</a>
-                    </form>
-                </div>
+            <section id="frontend">
+                <span class="stickers">
+                    <img class="stickerOne" src="img/scotch.png" alt="Pegatina" />
+                    <img class="stickerTwo" src="img/scotch.png" alt="Pegatina" />
+                </span>
+                <h2 class="titulo">Noticias de front-end</h2>
+                <article class="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#">Titulo de la entrada</a>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy
+                    </p>
+                    <span class="date">[20-12-2020. Víctor Robles WEB]</span>
+                </article>
+                <article class="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#">Titulo de la entrada</a>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy
+                    </p>
+                    <span class="date">[20-12-2020. Víctor Robles WEB]</span>
+                </article>
+                <article class="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#">Titulo de la entrada</a>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy
+                    </p>
+                    <span class="date">[20-12-2020. Víctor Robles WEB]</span>
+                </article>
+                <article class="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#">Titulo de la entrada</a>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy
+                    </p>
+                    <span class="date">[20-12-2020. Víctor Robles WEB]</span>
+                </article>
+            </section>
 
-                <div class="widget" id="log_in">
-                    <h3 class="blue">Aula vitual 1</h3>
-                    <form id="form">
-                        <label for="Nombre_Usuario1">Nombre de usuario:</label>
-                        <input name="Nombre_Usuario1" type="text">
-                        <label for="Contraseña">Contraseña:</label>
-                        <input name="Contraseña" type="password">
-                        <input type="submit" value="Entrar">
-                    </form>
-                </div>
+            <section id="backend">
+                <span class="stickers">
+                    <img class="stickerOne" src="img/scotch.png" alt="Pegatina" />
+                    <img class="stickerTwo" src="img/scotch.png" alt="Pegatina" />
+                </span>
+                <h2 class="titulo red">Noticias de back-end</h2>
+                <article class="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#">Titulo de la entrada</a>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy
+                    </p>
+                    <span class="date">[20-12-2020. Víctor Robles WEB]</span>
+                </article>
+                <article class="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#">Titulo de la entrada</a>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy
+                    </p>
+                    <span class="date">[20-12-2020. Víctor Robles WEB]</span>
+                </article>
+                <article class="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#">Titulo de la entrada</a>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy
+                    </p>
+                    <span class="date">[20-12-2020. Víctor Robles WEB]</span>
+                </article>
+                <article class="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#">Titulo de la entrada</a>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy
+                    </p>
+                    <span class="date">[20-12-2020. Víctor Robles WEB]</span>
+                </article>
+            </section>
 
-                <div class="widget" id="log_in">
-                    <h3 class="red">Aula virtual 2</h3>
-                    <form id="form">
-                        <label for="Nombre_Usuario2">Nombre de usuario:</label>
-                        <input name="Nombre_Usuario2" type="text">
-                        <label for="Contraseña">Contraseña:</label>
-                        <input name="Contraseña" type="password">
-                        <input type="submit" value="Entrar">
-                    </form>
-                </div>
+            <section id="instructor">
+                <span class="stickers">
+                    <img class="stickerOne" src="img/scotch.png" alt="Pegatina" />
+                    <img class="stickerTwo" src="img/scotch.png" alt="Pegatina" />
+                </span>
+                <h2 class="titulo orange">Noticias de instructor</h2>
+                <article class="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#">Titulo de la entrada</a>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy
+                    </p>
+                    <span class="date">[20-12-2020. Víctor Robles WEB]</span>
+                </article>
+                <article class="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#">Titulo de la entrada</a>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy
+                    </p>
+                    <span class="date">[20-12-2020. Víctor Robles WEB]</span>
+                </article>
+                <article class="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#">Titulo de la entrada</a>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy
+                    </p>
+                    <span class="date">[20-12-2020. Víctor Robles WEB]</span>
+                </article>
+                <article class="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#">Titulo de la entrada</a>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy
+                    </p>
+                    <span class="date">[20-12-2020. Víctor Robles WEB]</span>
+                </article>
+            </section>
 
-                <div class="widget" id="log_in">
-                    <h3>Enlaces de interes</h3>
-                    <ul>
-                        <li>
-                            <a target="_blank"
-                                href="https://victorroblesweb.es/academy">
-                                Master en JavaScript
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank"
-                                href="https://victorroblesweb.es/academy">
-                                Master en Php
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank"
-                                href="https://victorroblesweb.es/academy">
-                                Master en Web Full-Stack
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank"
-                                href="https://victorroblesweb.es/academy">
-                                Master en Frameworks JS
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank"
-                                href="https://victorroblesweb.es/academy">
-                                Master en Css
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank"
-                                href="https://victorroblesweb.es/academy">
-                                Clases de Git y comandos Linux
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <aside id="frase">
-                    Frase del dia:
-                    <br>Lorem ipsum dolor sit amet consectetur adipiscing
-                    elit arcu, enim a aliquet justo nibh sagittis
-                    <a href="#">Leer mas frases</a>
-                </aside>
+        </div>
+        <!--Fin de las secciones-->
 
-            </aside>
+        <aside id="frase">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy
+            <a href="#">Leer más frases</a>
+        </aside>
 
-            <!-- Fin De La Barra Lateral  -->
-            <!-- Inicio De Las Secciones -->
+        <div class="clearfix"></div>
+        <div id="history">
+            <a href="#">[Ver historico de noticias]</a>
+        </div>
+    </div>
+    <!-- Fin del contenido central -->
 
-            <div id="sections">
-                <section id="front_end">
-                    <span class="stickers">
-                        <img class="sticker2" src="img/scotch.png" alt="Cinta">
-                        <img class="sticker1" src="img/scotch.png" alt="Cinta">
-                    </span>
-                    <h2 class="titulo">Noticias de Front-End</h2>
-                    <article class="article">
-                        <span class="icon">a</span>
-                        <p>
-                            <a href="#">Titulo de la entrada</a>
-                            Lorem ipsum dolor sit amet consectetur adipiscing
-                            elit nam, dui gravida platea sociis blandit egestas
-                            sapien potenti mollis, ut taciti velit dignissim leo
-                            lacus netus. Ornare morbi phasellus quam nascetur
-                        </p>
-                        <span class="date">[20-12-2020. Vasco Tejada
-                            Huaranga]</span>
-                    </article>
-                    <article class="article">
-                        <span class="icon">a</span>
-                        <p>
-                            <a href="#">Titulo de la entrada</a>
-                            Lorem ipsum dolor sit amet consectetur adipiscing
-                            elit nam, dui gravida platea sociis blandit egestas
-                            sapien potenti mollis, ut taciti velit dignissim leo
-                            lacus netus. Ornare morbi phasellus quam nascetur
-                        </p>
-                        <span class="date">[20-12-2020. Vasco Tejada
-                            Huaranga]</span>
-                    </article>
-                    <article class="article">
-                        <span class="icon">a</span>
-                        <p>
-                            <a href="#">Titulo de la entrada</a>
-                            Lorem ipsum dolor sit amet consectetur adipiscing
-                            elit nam, dui gravida platea sociis blandit egestas
-                            sapien potenti mollis, ut taciti velit dignissim leo
-                            lacus netus. Ornare morbi phasellus quam nascetur
-                        </p>
-                        <span class="date">[20-12-2020. Vasco Tejada
-                            Huaranga]</span>
-                    </article>
-                    <article class="article">
-                        <span class="icon">a</span>
-                        <p>
-                            <a href="#">Titulo de la entrada</a>
-                            Lorem ipsum dolor sit amet consectetur adipiscing
-                            elit nam, dui gravida platea sociis blandit egestas
-                            sapien potenti mollis, ut taciti velit dignissim leo
-                            lacus netus. Ornare morbi phasellus quam nascetur
-                        </p>
-                        <span class="date">[20-12-2020. Vasco Tejada
-                            Huaranga]</span>
-                    </article>
-                </section>
-                <div id="section">
-                    <section id="back_end">
-                        <span class="stickers">
-                            <img class="sticker2" src="img/scotch.png"
-                                alt="Cinta">
-                            <img class="sticker1" src="img/scotch.png"
-                                alt="Cinta">
-                        </span>
-                        <h2 class="red titulo">Noticias de Back-End</h2>
-                        <article class="article">
-                            <span class="icon">a</span>
-                            <p>
-                                <a href="#">Titulo de la entrada</a>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipiscing
-                                elit nam, dui gravida platea sociis blandit
-                                egestas
-                                sapien potenti mollis, ut taciti velit dignissim
-                                leo
-                                lacus netus. Ornare morbi phasellus quam
-                                nascetur
-                            </p>
-                            <span class="date">[20-12-2020. Vasco Tejada
-                                Huaranga]</span>
-                        </article>
-                        <article class="article">
-                            <span class="icon">a</span>
-                            <p>
-                                <a href="#">Titulo de la entrada</a>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipiscing
-                                elit nam, dui gravida platea sociis blandit
-                                egestas
-                                sapien potenti mollis, ut taciti velit dignissim
-                                leo
-                                lacus netus. Ornare morbi phasellus quam
-                                nascetur
-                            </p>
-                            <span class="date">[20-12-2020. Vasco Tejada
-                                Huaranga]</span>
-                        </article>
-                        <article class="article">
-                            <span class="icon">a</span>
-                            <p>
-                                <a href="#">Titulo de la entrada</a>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipiscing
-                                elit nam, dui gravida platea sociis blandit
-                                egestas
-                                sapien potenti mollis, ut taciti velit dignissim
-                                leo
-                                lacus netus. Ornare morbi phasellus quam
-                                nascetur
-                            </p>
-                            <span class="date">[20-12-2020. Vasco Tejada
-                                Huaranga]</span>
-                        </article>
-                        <article class="article">
-                            <span class="icon">a</span>
-                            <p>
-                                <a href="#">Titulo de la entrada</a>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipiscing
-                                elit nam, dui gravida platea sociis blandit
-                                egestas
-                                sapien potenti mollis, ut taciti velit dignissim
-                                leo
-                                lacus netus. Ornare morbi phasellus quam
-                                nascetur
-                            </p>
-                            <span class="date">[20-12-2020. Vasco Tejada
-                                Huaranga]</span>
-                        </article>
-                    </section>
-                    <div id="section">
-                        <section id="Instructor">
-                            <span class="stickers">
-                                <img class="sticker2" src="img/scotch.png"
-                                    alt="Cinta">
-                                <img class="sticker1" src="img/scotch.png"
-                                    alt="Cinta">
-                            </span>
-                            <h2 class="titulo orange">Noticias del
-                                Instructor</h2>
-                            <article class="article">
-                                <span class="icon">a</span>
-                                <p>
-                                    <a href="#">Titulo de la entrada</a>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipiscing
-                                    elit nam, dui gravida platea sociis blandit
-                                    egestas
-                                    sapien potenti mollis, ut taciti velit
-                                    dignissim leo
-                                    lacus netus. Ornare morbi phasellus quam
-                                    nascetur
-                                </p>
-                                <span class="date">[20-12-2020. Vasco Tejada
-                                    Huaranga]</span>
-                            </article>
-                            <article class="article">
-                                <span class="icon">a</span>
-                                <p>
-                                    <a href="#">Titulo de la entrada</a>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipiscing
-                                    elit nam, dui gravida platea sociis blandit
-                                    egestas
-                                    sapien potenti mollis, ut taciti velit
-                                    dignissim leo
-                                    lacus netus. Ornare morbi phasellus quam
-                                    nascetur
-                                </p>
-                                <span class="date">[20-12-2020. Vasco Tejada
-                                    Huaranga]</span>
-                            </article>
-                            <article class="article">
-                                <span class="icon">a</span>
-                                <p>
-                                    <a href="#">Titulo de la entrada</a>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipiscing
-                                    elit nam, dui gravida platea sociis blandit
-                                    egestas
-                                    sapien potenti mollis, ut taciti velit
-                                    dignissim leo
-                                    lacus netus. Ornare morbi phasellus quam
-                                    nascetur
-                                </p>
-                                <span class="date">[20-12-2020. Vasco Tejada
-                                    Huaranga]</span>
-                            </article>
-                            <article class="article">
-                                <span class="icon">a</span>
-                                <p>
-                                    <a href="#">Titulo de la entrada</a>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipiscing
-                                    elit nam, dui gravida platea sociis blandit
-                                    egestas
-                                    sapien potenti mollis, ut taciti velit
-                                    dignissim leo
-                                    lacus netus. Ornare morbi phasellus quam
-                                    nascetur
-                                </p>
-                                <span class="date">[20-12-2020. Vasco Tejada
-                                    Huaranga]</span>
-                            </article>
-                        </section>
-                    </div>
-                    <div class="clearfix"></div>
-                    <!-- Fin De Las Secciones -->
-                    <div id="history">
-                        <a href="#">[Ver historico de noticias]</a>
-                    </div>
-                </div>
+    <div class="clearfix"></div>
+    <footer id="footer">
+        <p>&copy; Desarrollado por Vasco Tejada Huaranga</p>
+        <p>Más contenido y formación de desarrollo web en <a href="https://victorroblesweb.es/academy">victorroblesweb.es/academy</a></a></p>
+    </footer>
 
-                <div class="clearfix"></div>
-                <footer id="footer">
-                    <p>&copy; Desarrollado por Vasco Tejada H</p>
-                    <p>Mas Contenido y formacion de Desarrollo web en <a target="_blank" href="https://victorroblesweb.es/academy">VictorRoblesWeb</a></p>
-                </footer>
-                <!-- Fin Del Contenido Central -->
+</body>
 
-            </body>
-        </html>
+</html>

@@ -1,24 +1,20 @@
-/* Fuentes */
-
-@font-face{
+/*FUENTES*/
+@font-face {
     font-family: "nevis";
-    src: url("../fonts/nevis.eot");
-    src: url("../fonts/nevis.eot?#iefix") format("embedded-opentype"),
-     url("../fonts/nevis.woff") format("woff"),
-     url("../fonts/nevis.ttf") format("truetype"),
-     url("../fonts/nevis.svg") format("svg");
+    src: url("fonts/nevis.eot");
+    src: url("fonts/nevis.eot?#iefix") format("embedded-opentype"),
+        url("fonts/nevis.woff") format("woff"),
+        url("fonts/nevis.ttf") format("truetype"),
+        url("fonts/nevis.svg") format("svg");
     font-weight: normal;
-    font-style: normal;
-
+    font-style: normal; 
 }
 
-
-@font-face{
-    font-family: "Fjalla";
-    src: url("../fonts/FjallaOne-Regular.ttf") format(truetype);
+@font-face {
+    font-family: "Fjala";
+    src: url("fonts/FjallaOne-Regular.ttf") format('truetype');
     font-weight: normal;
-    font-style: normal;
-
+    font-style: normal; 
 }
 
 @font-face {
@@ -33,7 +29,7 @@
     font-style: normal;
 }
 
-/* Estilos Generales */
+/*ESTILOS GENERALES*/
 *{
     padding: 0px;
     margin: 0px;
@@ -43,28 +39,52 @@ body{
     background-image: url("../img/paven.png");
 }
 
-a:visited{
+a{
     color: #529125;
     text-decoration: none;
+    font-family: "Fjala";
+}
+
+a:visited{
+    color: #529125;
 }
 
 a:hover{
     color: #285616;
 }
 
-a{
-    color: #529125;
-    text-decoration: none;
+.red{
+    color: #9b2422 !important;
 }
-/* Formularios */
 
+.blue{
+    color: #0c73f2 !important;
+}
+
+.orange{
+    color: #d69d2a !important;
+}
+
+.icon{
+    font-family: "icons";
+    float:left;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+/*FORMLARIOS*/
 input[type="text"],
 input[type="email"],
 input[type="password"],
 select{
-    border: 1px solid #c9c9c9;
+    border: 1px solid #C9C9C9;
     box-shadow: 0px 0px 2px #ccc inset;
-    background-color: white;
+    background: white;
     padding: 1px;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -80,40 +100,39 @@ select:focus{
     color: black;
 }
 
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button{
+    display: block;
+    border-radius: 2px;
+    border: 1px solid green;
+    width: 60px;
+    padding: 3px;
+    color: white;
+    background-color: #70b231;
+    cursor: pointer;
+}
+
 input[type="button"]:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
-button:hover{
+button:hover{  
     box-shadow: 0px 0px 2px gray;
 }
 
 input[type="button"]:active,
 input[type="submit"]:active,
-input[type="reset"]:active
-button:active{
+input[type="reset"]:active,
+button:active{  
     box-shadow: 0px 0px 3px gray inset;
-    text-shadow: 0px 0px 2px #ccc;
+    text-shadow: 0px 0px 1px #ccc;
 }
 
-input[type="button"],
-input[type="submit"],
-input[type="reset"],
-button:hover{
-    display: block;
-    border-radius: 2px;
-    width: 60px;
-    padding: 3px;
-    background-color: #70b231;
-    color: white;
-    cursor: pointer;
-    border-color: green;
-}
-
-/* Cabecera */
-
+/*CABECERA*/
 #header{
     min-width: 1024px;
-    width: 100%;
+    width:100%;
     height: 250px;
     margin: 0px auto;
 }
@@ -135,7 +154,7 @@ button:hover{
     width: 140px;
 }
 
-#header h1{
+#header h1 {
     text-align: center;
     font-size: 40px;
     font-family: "nevis";
@@ -147,52 +166,48 @@ button:hover{
 }
 
 #header h1:hover{
-    text-shadow: 0px 2px 2px #333333, 0px 0px 4px #70b231;
+    text-shadow: 0px 2px 1px #333333, 0px 0px 4px#70b231;
 }
 
-#header h1 a{
+#header h1 a {
     color: #70b231;
 }
-          /*Fin De La Cabecera*/
-        /* Barra de navegacion */
+
+/*BARRA DE NAVEGACIÓN*/
 #nav{
     width: 100%;
-    background-color: #333333;
-    color: #ffffffff;
     height: 40px;
+    background-color: #333333;
+    color: white;
     font-family: sans-serif, Helvetica, Arial;
     font-size: 14px;
     box-shadow: 0px 0px 2px gray;
 }
 
-#nav ul{
+#nav ul {
     list-style: none;
     text-decoration: none;
     margin: 0px auto;
     width: 1090px;
 }
 
-#nav > ul > li{
+#nav > ul > li {
     line-height: 40px;
-    float: left;
+    float:left;
     border-right: 1px solid gray;
     transition: all 300ms;
 }
 
-#nav > ul > li a{
-    text-decoration: none;
-    color: #ffffff;
+#nav > ul > li a {
     display: block;
     padding-left: 20px;
     padding-right: 20px;
+    color: white;
+    text-decoration: none;
 }
 
-#nav > ul > li:first-child{
+#nav > ul > li > a:first-child{
     border-left: 1px solid gray;
-}
-
-#nav > ul > li:last-child{
-    border-right: 1px solid gray;
 }
 
 #nav > ul > li:hover{
@@ -200,9 +215,8 @@ button:hover{
     box-shadow: 0px 0px 4px green inset;
 }
 
-    /*  Fin De La Barra de navegacion */
-    /* Inicio Del Menu Desplegable */
-#nav > ul > li > ul{
+/*MENU DESPLEGABLE*/
+#nav > ul > li > ul {
     display: none;
     position: absolute;
     width: 160px;
@@ -215,39 +229,35 @@ button:hover{
 }
 
 #nav > ul > li:hover > ul > li{
-    background-color: #d2d1d0;
-    border-bottom: 1px solid #d6d6d6;
+    background-color: #F2F1F0;
+    border-bottom: 1px solid #D6D6D6;
     padding: 8px;
     line-height: 25px;
     font-size: 13px;
     transition: all 300ms;
 }
 
-#nav > ul > li:hover > ul > li > a{
+#nav > ul > li:hover > ul > li a{
     color: #666666;
 }
 
 #nav > ul > li:hover > ul > li:hover{
     box-shadow: 0px 0px 2px #ccc inset;
-    background-color: #cccddd;
+    background: rgb(238, 237, 237);
 }
 
-
-    /* Fin Del Menu Desplegable */
-    /* Contenido */
-
-#content{
+/*CONTENIDO*/
+#content {
+    font-family: sans-serif, Arial, Helvetica;
     width: 1250px;
     min-height: 1100px;
     margin: 0px auto;
 }
 
-    /* Barra Lateral */
-
-#aside,
-#frase{
+/*BARRA LATERAL*/
+#aside, #frase{
     width: 200px;
-    float: left;
+    float:left;
     margin: 30px;
     background-color: white;
     border: 1px solid #ccc;
@@ -255,16 +265,12 @@ button:hover{
     font-family: sans-serif, Arial, Helvetica;
 }
 
-#aside{
-    margin-right: 30px;
-}
-
 #frase{
+    /*clear: both;*/
     width: 180px;
     padding: 10px;
     font-size: 14px;
     font-family: sans-serif;
-    margin: -5px 0px 0px 0px;
 }
 
 #aside .widget{
@@ -290,20 +296,10 @@ button:hover{
     padding-top: 2px;
     padding-bottom: 2px;
     margin-bottom: 15px;
-    background-color: #f2f3f2;
+    background: #f2f3f2;
     border: 1px solid #ccc;
     border-left: none;
     border-right: none;
-}
-
-.blue{
-    color: #0c73f2 !important;
-}
-.red{
-    color: #9b2422 !important;
-}
-.orange{
-    color: #d69d2a !important;
 }
 
 #aside li{
@@ -313,8 +309,7 @@ button:hover{
     list-style: square;
 }
 
-/* Formularios barra lateral */
-
+/* FORMULARIOS BARRA LATERAL */
 #aside div label,
 #aside div input[type="text"],
 #aside div input[type="email"],
@@ -333,44 +328,41 @@ button:hover{
     margin-bottom: 10px;
 }
 
-
 #aside input,
 #aside label{
     margin: 0px auto;
-    text-align: center
+    text-align: center;
 }
 
-/* Secciones */
-
+/*SECCIONES*/
 #sections{
     float: right;
     width: 75%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif, Arial, Helvetica;
     margin-right: 20px;
 }
 
 #sections .titulo{
-    font-family: "Fjalla";
-    font-size: 24px;
-    font-weight: normal;
-    letter-spacing: 1px;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ccc;
-    margin-top: -20px;
-
+  font-family: "Fjala";
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: -20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
 #sections section{
-     margin-top: 40px;
-     background-color: white;
-     padding: 20px;
-     border: 1px solid #ccc;
-     box-shadow: 0px 0px 4px #c9c9c9;
-     color: #333333;
-     font-size: 16px;
-     overflow: hidden;
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 4px #C9C9C9;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden;
 }
 
 #sections .article{
@@ -380,39 +372,28 @@ button:hover{
 }
 
 #sections .date{
-    color: grey;
-    font-size: 14px; 
+    color:gray;
+    font-size: 14px;
 }
 
-#sections .sticker1,
-#sections .sticker2{
+#sections .stickerOne,
+#sections .stickerTwo{
     position: absolute;
     margin-top: -38px;
     z-index: 0;
 }
 
-#sections .sticker2{
+#sections .stickerTwo{
     margin-left: 860px;
-}
-
-.icon{
-    font-family: "icons";
-    margin-right: 5px;
-    margin-top: -2px;
-    float: left;
-}
-
-.clearfix{
-    float: none;
-    clear: both;
 }
 
 #history{
     float: right;
     margin-top: 20px;
-    margin-right: 20px;
+    margin-right: 20px;;
 }
 
+/*PIE DE PÁGINA*/
 #footer{
     width: 100%;
     margin: 0px auto;
@@ -421,9 +402,8 @@ button:hover{
     background-color: #333333;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: white;
+    color:white;
     font-family: sans-serif;
     font-size: 14px;
     box-shadow: 0px 0px 2px gray;
 }
-
